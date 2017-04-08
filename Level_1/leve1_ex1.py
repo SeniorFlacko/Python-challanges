@@ -8,3 +8,15 @@ Consider use range(#begin, #end) method
 
 """
 
+def main():
+    pass
+
+if __name__ == '__main__':
+	lista = []
+	for x in range(2000,3200):
+		if x%7==0 and x%5!=0:
+			lista.append(x)
+	print(lista)
+
+  
+    	
