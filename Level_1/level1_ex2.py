@@ -10,3 +10,10 @@ Hints:
 In case of input data being supplied to the question, it should be assumed to be a console input.
 tuple() method can convert list to tuple
 """
+
+if __name__ == '__main__':
+	cadena = input("Ingrese lista separada por coma")
+	lista = cadena.split(',')
+	tupla = tuple(lista)
+	print(lista)
+	print(tupla)
