@@ -12,3 +12,8 @@ Hint:
 use 'list comprehension'
 
 """
+if __name__ == '__main__':
+	numeros = input("Ingrese los numeros separados por coma")
+	lista = numeros.split(',')
+	respuestas = [i for i in lista if int(i,2)%5==0]
+	print(respuestas)
