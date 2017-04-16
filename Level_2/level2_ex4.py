@@ -11,3 +11,14 @@ Then, the output of the program should be:
 if __name__ == '__main__':
 	cadena = input("Ingrese dos numeros separados por coma: ")
 	lista = cadena.split(',')
+	x = int(lista[0])
+	y = int(lista[1])
+	matriz = []
+	for i in range(x):
+		matriz.append([0]*y)
+
+	for i in range(x):
+		for j in range(y):
+			matriz[i][j]=i*j
+	
+	print(matriz)
