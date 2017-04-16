@@ -13,11 +13,22 @@ pick a word or two from a list.
 
 
 """
-
 import random
-
-def main():
-    pass
-
 if __name__ == '__main__':
-    main()
+	print("Choose an option: ")
+	print("1.- Weak")
+	print("2.- Strong")
+	lista_w = ["manzana","pera","mango","platano","naranja","limon","kiwi","papaya","rojo","verde","azul","blaco"]
+	lista_s = ["!","#","$","_",".",0,1,2,3,4,5,6,7,8,9,"a","b","c","d","@","x","y",".","Z","O","K","D","R","X","W"]
+	password=""
+	o = int(input("Wich option: "))
+	if o==1:
+		for i in random.sample(lista_w,2):
+			password+=i
+	elif o==2:
+		for i in random.sample(lista_s,8):
+			password+=str(i)
+	else:
+		print(o)
+
+	print(password)
