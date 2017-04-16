@@ -8,3 +8,6 @@ Then, the output of the program should be:
 [[0, 0, 0, 0, 0], [0, 1, 2, 3, 4], [0, 2, 4, 6, 8]] 
 
 """
+if __name__ == '__main__':
+	cadena = input("Ingrese dos numeros separados por coma: ")
+	lista = cadena.split(',')
