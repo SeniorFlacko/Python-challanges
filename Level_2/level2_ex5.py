@@ -11,3 +11,17 @@ search isdigit & isalpha
 
 
 """
+digits  = 0
+letters = 0
+if __name__ == '__main__':
+	cadena = input("Ingrese una cadena: ")
+	for c in cadena:
+		if c.isdigit():
+			digits+=1
+		elif c.isalpha():
+			letters+=1
+		else:
+			print('ERROR')
+
+	print("LETTERS " + str(letters))
+	print("DIGITS " + str(digits))
